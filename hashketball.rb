@@ -183,7 +183,7 @@ def player_stats(player_name)
     player_info = info[:players]
     player_info.each do |player_detail|
       if player_detail[:player_name] == player_name
-        player_detail
+        return player_detail
       end
     end
   end
