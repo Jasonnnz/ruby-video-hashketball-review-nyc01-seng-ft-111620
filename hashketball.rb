@@ -130,5 +130,11 @@ end
 # Write code here
 def num_points(player_name)
   game_hash.each do |team, info|
-    info.each do |
+    player_info = info[:players]
+    player_info.each do |player_detail|
+      if player_detail[:player_name] == player_name
+        player_detail[:points]
+      end
+    end
+  end
 end
