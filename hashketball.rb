@@ -1,7 +1,7 @@
 # Write your code below game_hash
 
 def game_hash
-  {
+  game_hash = {
     home: {
       team_name: "Brooklyn Nets",
       colors: ["Black", "White"],
@@ -128,3 +128,7 @@ def game_hash
 end
 
 # Write code here
+def num_points(player_name)
+  game_hash.each do |team, info|
+    info.each do |
+end
