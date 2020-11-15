@@ -177,5 +177,15 @@ def player_numbers(team_name)
   end
   jersey_nums
 end
-        
+
+def player_stats(player_name)
+  game_hash.each do |team, info|
+    player_info = info[:players]
+    player_info.each do |player_detail|
+      if player_detail[:player_name] == player_name
+        player_detail
+      end
+    end
+  end
+end
       
