@@ -175,7 +175,7 @@ def player_numbers(team_name)
       end
     end
   end
-  jersey_numss
+  jersey_nums
 end
         
       
