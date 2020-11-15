@@ -188,4 +188,17 @@ def player_stats(player_name)
     end
   end
 end
+
+def big_shoe_rebounds
+  shoe_sizes = []
+  game_hash.each do |team, info| 
+    player_info = info[:players]
+    player_info.each do |player_detail|
+      shoe_sizes << player_detail[:shoe]
+    end
+  end
+  shoe_sizes
+end
+    
+  
       
